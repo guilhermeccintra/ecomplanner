@@ -385,7 +385,7 @@ a { text-decoration: none; }
 /* ════════════════════════════
    SECTION 3 – FEATURE CARDS
 ════════════════════════════ */
-.s3 { background: var(--bg-card); }
+.s3 { background: var(--bg-card2); }
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -552,7 +552,7 @@ a { text-decoration: none; }
    SECTION 6 – ANTES / DEPOIS
 ════════════════════════════ */
 .s6 {
-  background: var(--bg-card);
+  background: var(--bg-card2);
   padding: 100px 0;
 }
 .s6-grid {
@@ -562,7 +562,7 @@ a { text-decoration: none; }
   align-items: center;
 }
 .s6-col {
-  background: var(--bg-card2);
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 36px 32px;
@@ -819,7 +819,7 @@ a { text-decoration: none; }
 /* ════════════════════════════
    SECTION 9 – PARA QUEM
 ════════════════════════════ */
-.s9 { background: var(--bg-card); }
+.s9 { background: var(--bg-card2); }
 .s9-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
