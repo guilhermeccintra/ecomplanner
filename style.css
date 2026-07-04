@@ -1176,7 +1176,7 @@ a { text-decoration: none; }
   }
   
   .hero-text {
-    text-align: center;
+    text-align: left;
   }
   .hero-detail {
     border-left: none;
