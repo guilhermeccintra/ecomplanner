@@ -198,7 +198,7 @@ a { text-decoration: none; }
   gap: 80px;
   align-items: center;
 }
-.hero-text { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.hero-text { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
 
 .badge-pill {
   display: inline-flex;
