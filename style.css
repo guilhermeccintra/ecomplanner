@@ -632,11 +632,13 @@ a { text-decoration: none; }
 .s7 { background: var(--bg); }
 .gallery-carousel-wrapper {
   position: relative;
+  width: 100%;
   max-width: 300px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
+  box-sizing: border-box;
 }
 .gallery-carousel {
   display: flex;
@@ -646,7 +648,8 @@ a { text-decoration: none; }
   padding-bottom: 16px;
   scrollbar-width: thin;
   scrollbar-color: var(--green) var(--border);
-  flex: 1;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 .gallery-carousel::-webkit-scrollbar {
   height: 8px;
@@ -669,6 +672,8 @@ a { text-decoration: none; }
   border: 1px solid var(--border);
   background: var(--bg-card);
   transition: transform var(--transition), box-shadow var(--transition);
+  min-width: 0;
+  box-sizing: border-box;
 }
 .carousel-btn {
   flex: 0 0 48px;
@@ -1315,3 +1320,7 @@ a { text-decoration: none; }
   .hero-badge    { text-align: center; display: block; }
 }
 
+/* 🔒 proteção contra scroll horizontal */
+html, body {
+  overflow-x: hidden;
+}
