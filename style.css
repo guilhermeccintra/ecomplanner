@@ -1314,3 +1314,6 @@ a { text-decoration: none; }
   .hero-badges   { flex-direction: column; width: 100%; align-items: stretch; gap: 8px; }
   .hero-badge    { text-align: center; display: block; }
 }
+body {
+  overflow-x: hidden;
+}
