@@ -1160,24 +1160,53 @@ a { text-decoration: none; }
 }
 
 @media (max-width: 768px) {
-  .hero { padding: 110px 0 40px; }
-  .hero-grid     { grid-template-columns: 1fr; gap: 40px; }
-  
-  /* Centering eyebrow and badge layouts on mobile */
+
+  .hero {
+    padding: 110px 0 40px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Centraliza todo o conteúdo da Hero */
+  .hero-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Badge superior */
   .badge-pill {
     display: inline-flex;
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* Tag das seções */
   .section-tag {
     display: table;
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .hero-text {
-    text-align: center;
+
+  /* Mockup mobile */
+  .hero-mobile-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 24px auto;
+    align-self: center;
   }
+
+  .mockup-img-mobile {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
   .hero-detail {
     border-left: none;
     border-top: 3px solid var(--green);
@@ -1190,12 +1219,18 @@ a { text-decoration: none; }
 
   .hero-badges {
     justify-content: center;
-    margin-bottom: 32px; /* Generous spacing before button */
+    align-items: center;
+    margin-bottom: 32px;
     gap: 10px;
   }
+
   .hero-cta {
     margin-top: 8px;
+    display: flex;
+    justify-content: center;
   }
+
+}
 
   /* Hide default desktop visual layout on mobile */
   .hero-visual   { display: none; }
