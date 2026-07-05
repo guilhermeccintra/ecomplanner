@@ -701,7 +701,7 @@ a { text-decoration: none; }
 /* destaque visual maior no hover */
 .gallery-item:hover{
   transform:translateY(-6px);
-  box-shadow:0 20px 60px rgba(0,0,0,.45);
+  box-shadow: 0 12px 40px rgba(23,201,100,0.08);
 }
 
 .gallery-item img{
