@@ -385,7 +385,7 @@ a { text-decoration: none; }
 /* ════════════════════════════
    SECTION 3 – FEATURE CARDS
 ════════════════════════════ */
-.s3 { background: var(--bg-card2); }
+.s3 { background: var(--bg); }
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
