@@ -385,12 +385,24 @@ a { text-decoration: none; }
 /* ════════════════════════════
    SECTION 3 – FEATURE CARDS
 ════════════════════════════ */
-.s3 { background: var(--bg); }
+.s3 { 
+  background: var(--bg); 
+}
+
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
 }
+
+/* desktop */
+@media (min-width: 992px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
 .feature-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -399,28 +411,38 @@ a { text-decoration: none; }
   transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
+
 .feature-card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0; 
+  left: 0; 
+  right: 0;
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--green), transparent);
   opacity: 0;
   transition: opacity var(--transition);
 }
-.feature-card:hover::before { opacity: 1; }
+
+.feature-card:hover::before { 
+  opacity: 1; 
+}
+
 .feature-card:hover {
   transform: translateY(-6px);
   border-color: rgba(23,201,100,0.25);
   box-shadow: 0 12px 40px rgba(23,201,100,0.08);
 }
+
 .card-icon {
   font-size: 32px;
   margin-bottom: 16px;
   display: block;
   line-height: 1;
 }
+
 .card-title {
   font-size: 16px;
   font-weight: 700;
@@ -428,6 +450,7 @@ a { text-decoration: none; }
   margin-bottom: 10px;
   line-height: 1.4;
 }
+
 .card-body {
   font-size: 14px;
   color: var(--gray-300);
