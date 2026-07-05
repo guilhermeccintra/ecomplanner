@@ -382,27 +382,26 @@ a { text-decoration: none; }
   object-fit: contain;
 }
 
-/* ════════════════════════════
-   SECTION 3 – FEATURE CARDS
-════════════════════════════ */
 .s3 { 
   background: var(--bg); 
 }
 
-.cards-grid {
+/* GRID BASE */
+.cards-grid.is-visible {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-/* desktop */
+/* DESKTOP */
 @media (min-width: 992px) {
-  .cards-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .cards-grid.is-visible {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
   }
 }
 
+/* CARD */
 .feature-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
