@@ -633,13 +633,21 @@ a { text-decoration: none; }
   background: var(--bg);
 }
 
+/* ==========================
+   DESKTOP (EDITORIAL LAYOUT)
+========================== */
+
 .gallery-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
+  grid-template-columns: 1fr;
+  gap:28px;
   margin-top:40px;
+  max-width: 900px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
+/* primeira imagem maior destaque */
 .gallery-item{
   position:relative;
   overflow:hidden;
@@ -651,9 +659,10 @@ a { text-decoration: none; }
   aspect-ratio:16/9;
 }
 
+/* destaque visual maior no hover */
 .gallery-item:hover{
-  transform:translateY(-4px);
-  box-shadow:0 16px 50px rgba(0,0,0,.6);
+  transform:translateY(-6px);
+  box-shadow:0 20px 60px rgba(0,0,0,.45);
 }
 
 .gallery-item img{
@@ -665,9 +674,10 @@ a { text-decoration: none; }
 }
 
 .gallery-item:hover img{
-  transform:scale(1.02);
+  transform:scale(1.03);
 }
 
+/* overlay */
 .gallery-overlay{
   position:absolute;
   inset:0;
@@ -695,7 +705,7 @@ a { text-decoration: none; }
 }
 
 /* ==========================
-   MOBILE
+   MOBILE (NÃO ALTERADO)
 ========================== */
 
 @media (max-width:768px){
@@ -706,7 +716,6 @@ a { text-decoration: none; }
   }
 
 }
-
 
 /* ==========================
    LIGHTBOX
