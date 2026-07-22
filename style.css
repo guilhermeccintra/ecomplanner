@@ -69,6 +69,23 @@ a { text-decoration: none; }
   background: var(--green);
   color: #000;
   box-shadow: 0 4px 24px rgba(23,201,100,0.35);
+  position: relative;
+  overflow: hidden;
+}
+.btn-green::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.45), transparent);
+  animation: btn-shimmer 2.2s infinite;
+}
+@keyframes btn-shimmer {
+  0%   { left: -100%; }
+  60%  { left: 150%; }
+  100% { left: 150%; }
 }
 .btn-green:hover {
   background: #20e07a;
@@ -1698,4 +1715,15 @@ a { text-decoration: none; }
   margin: 0 auto;
 }
 
-
+/* ─── AUDIENCE TAGLINE ─── */
+.audience-tagline {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--gray-300);
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
