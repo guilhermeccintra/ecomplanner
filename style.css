@@ -1371,8 +1371,17 @@ a { text-decoration: none; }
   background: var(--green-g);
   border-color: rgba(23,201,100,0.3);
 }
-.step-list-box.auto h4 { color: var(--green-d); }
-.step-list-box.auto ul li::before { content: '✨'; color: var(--green); }
+.step-list-box.auto h4 {
+    color: var(--green-d);
+}
+
+.step-list-box.auto ul li {
+    padding-left: 0;
+}
+
+.step-list-box.auto ul li::before {
+    display: none;
+}
 
 .step-note {
   font-size: 14px;
