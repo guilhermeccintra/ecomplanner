@@ -1389,7 +1389,7 @@ a { text-decoration: none; }
 }
 
 .step-list-box.auto ul li::before {
-    content: '✨ ';
+    content: '✅ ';
     color: var(--green);
 }
 
