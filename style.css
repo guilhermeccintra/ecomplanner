@@ -1696,3 +1696,9 @@ a { text-decoration: none; }
   margin: 0 auto;
 }
 
+/* Apenas no desktop */
+@media (min-width: 992px) {
+    .hero {
+        padding-top: 40px;
+    }
+}
