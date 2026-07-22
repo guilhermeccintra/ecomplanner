@@ -1362,7 +1362,7 @@ a { text-decoration: none; }
 .step-list-box.w-full { flex: 100%; }
 .step-list-box h4 {
   font-size: 15px;
-  color: var(--white);
+  color: var(--green-d);
   margin-bottom: 12px;
 }
 .step-list-box ul {
