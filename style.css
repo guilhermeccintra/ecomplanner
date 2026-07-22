@@ -180,7 +180,7 @@ a { text-decoration: none; }
 .hero {
   background: var(--bg-card);
   position: relative;
-  padding: 80px 0 30px;
+  padding: 120px 0 30px;
   overflow: hidden;
 }
 .hero-glow {
