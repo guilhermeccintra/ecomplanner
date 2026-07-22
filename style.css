@@ -1375,10 +1375,10 @@ a { text-decoration: none; }
   font-size: 14px;
   color: var(--gray-500);
   position: relative;
-  padding-left: 18px;
+  padding-left: 28px;
 }
 .step-list-box ul li::before {
-  content: '🖊️';
+  content: '🖊️  ';
   position: absolute;
   left: 0;
   color: var(--gray-300);
@@ -1389,12 +1389,12 @@ a { text-decoration: none; }
 }
 
 .step-list-box.auto ul li::before {
-    content: '✅';
+    content: '✅  ';
     color: var(--green);
 }
 
 .step-list-box.w-full ul li::before {
-    content: '✅';
+    content: '✅  ';
     color: var(--green);
 }
 .step-note {
