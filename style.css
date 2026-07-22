@@ -1378,7 +1378,7 @@ a { text-decoration: none; }
   padding-left: 18px;
 }
 .step-list-box ul li::before {
-  content: '✓';
+  content: '🖊️ ';
   position: absolute;
   left: 0;
   color: var(--gray-300);
