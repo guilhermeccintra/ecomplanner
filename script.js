@@ -144,3 +144,22 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnimations();
   pulseHeroCTA();
 });
+
+// ─── Meta Pixel: ViewContent ao scrollar ───
+(function () {
+  let viewContentFired = false;
+
+  window.addEventListener('scroll', function onScroll() {
+    if (viewContentFired) return;
+
+    const scrolled = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrolled >= 300) {
+      viewContentFired = true;
+      if (typeof fbq === 'function') {
+        fbq('track', 'ViewContent');
+      }
+      window.removeEventListener('scroll', onScroll);
+    }
+  }, { passive: true });
+})();
