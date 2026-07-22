@@ -1699,6 +1699,6 @@ a { text-decoration: none; }
 /* Apenas no desktop */
 @media (min-width: 992px) {
     .hero {
-        padding-top: 40px;
+        padding-top: 120px;
     }
 }
