@@ -900,7 +900,7 @@ a { text-decoration: none; }
 /* ════════════════════════════
    PRICE SECTION
 ════════════════════════════ */
-.s-preco { background: var(--bg); }
+.s-preco { background: var(--bg-card); }
 .price-card {
   max-width: 540px;
   margin: 0 auto;
@@ -1034,7 +1034,7 @@ a { text-decoration: none; }
 /* ════════════════════════════
    FAQ
 ════════════════════════════ */
-.s-faq { background: var(--bg-card); }
+.s-faq { background: var(--bg); }
 .faq-list {
   max-width: 720px;
   margin: 0 auto;
