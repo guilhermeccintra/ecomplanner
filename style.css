@@ -1655,7 +1655,6 @@ a { text-decoration: none; }
   gap: 16px;
 }
 .hero-mockup-centered {
-  margin: 20px 0 10px;
   width: 100%;
   max-width: 900px;
   display: flex;
