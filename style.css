@@ -246,7 +246,6 @@ a { text-decoration: none; }
 .hero-sub {
   font-size: 18px;
   color: var(--gray-300);
-  margin-bottom: 16px;
   line-height: 1.7;
 }
 
