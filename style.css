@@ -266,13 +266,6 @@ a { text-decoration: none; }
   font-weight: 700;
 }
 
-.traffic-highlight {
-  position: relative;
-  display: inline-block;
-  color: var(--green-d);
-  font-weight: 900;
-}
-
 .traffic-highlight::after {
   content: "";
   position: absolute;
