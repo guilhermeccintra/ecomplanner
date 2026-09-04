@@ -197,7 +197,7 @@ a { text-decoration: none; }
 .hero {
   background: var(--bg-card);
   position: relative;
-  padding: 100px 0 30px;
+  padding: 110px 0 30px;
   overflow: hidden;
 }
 .hero-glow {
@@ -1176,7 +1176,7 @@ a { text-decoration: none; }
 }
 
 @media (max-width: 768px) {
-  .hero { padding: 100px 0 40px; }
+  .hero { padding: 100px 0 30px; }
   .hero-grid     { grid-template-columns: 1fr; gap: 40px; }
   
   /* Centering eyebrow and badge layouts on mobile */
