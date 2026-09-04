@@ -1205,7 +1205,7 @@ a { text-decoration: none; }
 }
 
 @media (max-width: 768px) {
-  .hero { padding: 100px 0 30px; }
+  .hero { padding: 90px 0 30px; }
   .hero-grid     { grid-template-columns: 1fr; gap: 40px; }
   
   /* Centering eyebrow and badge layouts on mobile */
